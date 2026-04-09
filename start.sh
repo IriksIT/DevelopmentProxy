@@ -1,7 +1,6 @@
 #!/usr/bin/env sh
 
 # ================================================
-# Enrise development proxy
 # find out more: https://enri.se/development-proxy
 # ================================================
 

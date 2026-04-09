@@ -6,11 +6,11 @@ We recommend that you add the snippet below to your project starting command, to
 you have the proxy running when you run a project. Run it via curl:
 
 ```shell
-curl --silent --location https://enri.se/development-proxy-start | sh
+curl --silent --location https://beun.dev/development-proxy-start | sh
 ```
 or via wget:
 ```shell
-wget --quiet --output-document - https://enri.se/development-proxy-start | sh
+wget --quiet --output-document - https://beun.dev/development-proxy-start | sh
 ```
 
 ## 2. Docker compose config
@@ -38,7 +38,7 @@ Note: make sure the slugs begin with your project name so multiple projects can 
 ### On project start
 
 After starting your Docker Compose stack, the following command needs to be run
-in order to link your docker network to the enrise dev proxy network:
+in order to link your docker network to the iriksit dev proxy network:
 
 ```shell
 docker network connect <your-project-docker-network> development-proxy || true
@@ -108,7 +108,7 @@ function task:build { ## (re)Build the project docker containers
 function task:start { ## Run the project locally
     project:set-hosts
     title "Starting development proxy"
-    curl --silent --location https://enri.se/development-proxy-start | sh
+    curl --silent --location https://beun.dev/development-proxy-start | sh
     title "Starting project container"
     docker compose up --detach
     docker network connect <your-project-docker-network> development-proxy || true

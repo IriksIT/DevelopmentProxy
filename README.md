@@ -1,6 +1,4 @@
-# Enrise development proxy
-
-![Development proxy](./development-proxy.png)
+# Iriks-IT development proxy
 
 ## Why?
 
